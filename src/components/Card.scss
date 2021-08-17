@@ -1,0 +1,28 @@
+.card {
+    padding-left: 5em;
+    padding-top: 7.78em;
+    
+    border: 1px solid #333;
+    border-radius: 5%;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: translate 2s ease-out;
+
+    &.playable &:hover {
+        border: 2px solid #333;
+        box-shadow: 6px 6px 0px 0px #333;
+        top: -70%;
+    }
+
+    &.hand2center {
+        animation: hand2center 0.5s ease-in-out;
+    }
+}
+
+@keyframes hand2center {
+    from { top: -60%; left: 1%; }
+    to { top: -300%; left: 5%; }
+}
