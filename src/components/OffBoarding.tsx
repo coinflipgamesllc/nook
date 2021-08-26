@@ -11,7 +11,7 @@ interface OffBoardingProps {
 const OffBoarding: FC<OffBoardingProps> = ({ state, dispatch }) => {
     return (
         <div className="offboarding">
-            <h1>{state.players[state.turn.player].name} wins!</h1>
+            <h1>{state.players[state.turn.player].name} win{state.turn.player === 0 ? '' : 's'}!</h1>
             <p>Thanks for playing nook!</p>
 
             <button 
