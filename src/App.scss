@@ -1,31 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;900&display=swap');
-
-body {
-  background-color: #888;
-  font-family: 'Spartan', sans-serif;
-  box-sizing: border-box;
+.App {
+  width: 100vw;
+  height: 100vh;
 }
 
 button {
   padding: 16px 32px;
 
-  background-color: #ccc;
+  background-color: #ddda;
   border: 1px solid #333;
-  border-radius: 2px;
+  border-radius: 5px;
   
-  box-shadow: 6px 6px 0px 0px #333;
+  box-shadow: 2px 2px 1px 1px #3339;
 
   font-size: 1em;
   font-weight: 600;
 
   cursor: pointer;
 
-  &:hover {
-    background-color: #dedede;
+  &:hover:not(:disabled) {
+    background-color: #fffa;
   }
   &:active {
-    position: relative;
-    top: 1px;
-    box-shadow: 4px 4px 0px 0px #333;
+    box-shadow: 1px 1px 1px 1px #3339;
+  }
+  &:disabled {
+    background-color: #ccca;
+    cursor: not-allowed;
+  }
+}
+
+.Toastify .toaster {
+  position: absolute;
+  top: 40%;
+
+  div.info {
+    background-color: #FFC759;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    color: #333;
+    font-size: 2em;
+    font-weight: 600;
+
+    text-align: center;
+  }
+}
+
+.highlight {
+  animation: 2s ease-in-out 1s infinite alternate glow;
+}
+
+@keyframes glow {
+  from {
+      transform: translateY(0px);
+      box-shadow: 0 0 10px 5px #fff;
+  }
+  to {
+      transform: translateY(5px);
+      box-shadow: 0 0 5px 8px #fff;
   }
 }

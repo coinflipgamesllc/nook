@@ -1,0 +1,15 @@
+.help-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+    padding: 10px;
+
+    font-family: monospace;
+
+    &:active {
+        position: absolute;
+        top: unset;
+        bottom: 4px;
+    }
+}

@@ -1,0 +1,25 @@
+.turn-tracker {
+    position: absolute;
+
+    margin: auto;
+
+    width: 500px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &.play, &.discard, &.think {
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: #ddda;
+    }
+
+    font-size: 2em;
+
+    span {
+        padding: 10px;
+    }
+}
