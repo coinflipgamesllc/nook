@@ -3,6 +3,11 @@ import { Actions, Action } from '../types/GameState';
 
 import './Rules.scss';
 
+import title from '../img/title.png';
+import matching from '../img/rules-matching.png';
+import discards from '../img/rules-discards.png';
+import perfect from '../img/rules-perfect-match.png';
+
 interface RulesProps {
     dispatch: Dispatch<Action>;
     resume: boolean;
@@ -19,7 +24,7 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
                 <p>
                     Compete with your fellow interior designers to suggest ideas for how this nook should look.
                 </p>
-                <img src="/img/title.png" alt="Nook title" />
+                <img src={title} alt="Nook title" />
             </Fragment>
         );
         break;
@@ -30,7 +35,7 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
                 <p>
                     Play cards from your hand to create matches with the card in the center.
                 </p>
-                <img src="/img/rules-matching.png" alt="Rules on matching" />
+                <img src={matching} alt="Rules on matching" />
             </Fragment>
         );
         break;
@@ -41,7 +46,7 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
                 <p>
                     The better the match, the more cards you can discard. Discard your hand first to win the round.
                 </p>
-                <img src="/img/rules-discards.png" alt="Rules on discarding" />
+                <img src={discards} alt="Rules on discarding" />
             </Fragment>
         );
         break;
@@ -52,7 +57,7 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
                 <p>
                     You can also play a perfect match at any time &mdash; even when it's not your turn. It will become your turn instantly!
                 </p>
-                <img src="/img/rules-perfect-match.png" alt="Rules on perfect matches" />
+                <img src={perfect} alt="Rules on perfect matches" />
             </Fragment>
         );
         break;

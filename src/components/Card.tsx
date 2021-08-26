@@ -19,12 +19,11 @@ const Card: FC<CardProps> = ({ index, id, color, wallpaper, decoration, visible,
     // eslint-disable-next-line
     }, [id, animating, location])
 
-    const image = visible
-        ? `url(/img/${color}_${wallpaper}_${decoration}.png)`
-        : `url(/img/cardback.png)`;
+    const imageClass = visible
+        ? `${color}_${wallpaper}_${decoration}`
+        : `cardback`;
 
     let style: CSSProperties = {
-        backgroundImage: image,
         top: `${pos.y}px`,
         left: `${pos.x}px`,
         zIndex: index,
@@ -33,7 +32,7 @@ const Card: FC<CardProps> = ({ index, id, color, wallpaper, decoration, visible,
     return (
         <div
             id={`card${id}`}
-            className={`card ${visible ? 'front' : 'back'} ${location} ${owner ? `p${owner}` : ''}`}
+            className={`card ${imageClass} ${visible ? 'front' : 'back'} ${location} ${owner ? `p${owner}` : ''}`}
             style={style}
             onClick={() => {
                 // Only human playable cards

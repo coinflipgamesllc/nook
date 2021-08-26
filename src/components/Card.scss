@@ -21,6 +21,35 @@
         left 0.6s ease-in-out;
 
     box-shadow: 2px 2px 5px 3px #3333;
+
+    &.cardback { background-image: url('../img/cardback.png'); }
+    &.blue_chevron_clock { background-image: url('../img/blue_chevron_clock.png'); }
+    &.blue_chevron_picture { background-image: url('../img/blue_chevron_picture.png'); }
+    &.blue_chevron_plant { background-image: url('../img/blue_chevron_plant.png'); }
+    &.blue_flower_clock { background-image: url('../img/blue_flower_clock.png'); }
+    &.blue_flower_picture { background-image: url('../img/blue_flower_picture.png'); }
+    &.blue_flower_plant { background-image: url('../img/blue_flower_plant.png'); }
+    &.blue_stripes_clock { background-image: url('../img/blue_stripes_clock.png'); }
+    &.blue_stripes_picture { background-image: url('../img/blue_stripes_picture.png'); }
+    &.blue_stripes_plant { background-image: url('../img/blue_stripes_plant.png'); }
+    &.grey_chevron_clock { background-image: url('../img/grey_chevron_clock.png'); }
+    &.grey_chevron_picture { background-image: url('../img/grey_chevron_picture.png'); }
+    &.grey_chevron_plant { background-image: url('../img/grey_chevron_plant.png'); }
+    &.grey_flower_clock { background-image: url('../img/grey_flower_clock.png'); }
+    &.grey_flower_picture { background-image: url('../img/grey_flower_picture.png'); }
+    &.grey_flower_plant { background-image: url('../img/grey_flower_plant.png'); }
+    &.grey_stripes_clock { background-image: url('../img/grey_stripes_clock.png'); }
+    &.grey_stripes_picture { background-image: url('../img/grey_stripes_picture.png'); }
+    &.grey_stripes_plant { background-image: url('../img/grey_stripes_plant.png'); }
+    &.red_chevron_clock { background-image: url('../img/red_chevron_clock.png'); }
+    &.red_chevron_picture { background-image: url('../img/red_chevron_picture.png'); }
+    &.red_chevron_plant { background-image: url('../img/red_chevron_plant.png'); }
+    &.red_flower_clock { background-image: url('../img/red_flower_clock.png'); }
+    &.red_flower_picture { background-image: url('../img/red_flower_picture.png'); }
+    &.red_flower_plant { background-image: url('../img/red_flower_plant.png'); }
+    &.red_stripes_clock { background-image: url('../img/red_stripes_clock.png'); }
+    &.red_stripes_picture { background-image: url('../img/red_stripes_picture.png'); }
+    &.red_stripes_plant { background-image: url('../img/red_stripes_plant.png'); }
 }
 
 /**
