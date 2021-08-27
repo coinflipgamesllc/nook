@@ -200,8 +200,9 @@ export function reducer(draft: Draft<GameState>, action: Action): void {
                     // Perfect match, off turn
                     moveToCenter(draft, playedCard, true);
                     
-                    draft.turn.player = action.payload.player;
-                    draft.turn.phase = Phase.Play;
+                    // Trying without the turn update
+                    // draft.turn.player = action.payload.player;
+                    // draft.turn.phase = Phase.Play;
                 } else if (action.payload.player === 0) {
                     // No match! (Do something?)
                     toast.error('That card has no matches!', { toastId: 'rejected' });
@@ -322,9 +323,12 @@ function resetRound(draft: Draft<GameState>, lastWinner: number) {
     draft.cards = draft.cards.shuffle();
 
     draft.turn = {
-        player: lastWinner,
+        player: lastWinner + 1,
         phase: Phase.Preround,
     };
+    if (draft.turn.player >= draft.players.length) {
+        draft.turn.player = 0;
+    }
 
     draft.players.forEach((player) => player.toDiscard = 0);
 }

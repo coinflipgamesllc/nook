@@ -1,5 +1,5 @@
 import React, { Dispatch, FC } from 'react';
-import { GameState, Actions, Action } from '../types/GameState';
+import { GameState, Actions, Action, getGameWinner } from '../types/GameState';
 
 import './OffBoarding.scss';
 
@@ -9,9 +9,11 @@ interface OffBoardingProps {
 }
 
 const OffBoarding: FC<OffBoardingProps> = ({ state, dispatch }) => {
+    const winner = getGameWinner(state) as number;
+
     return (
         <div className="offboarding">
-            <h1>{state.players[state.turn.player].name} win{state.turn.player === 0 ? '' : 's'}!</h1>
+            <h1>{state.players[winner].name} win{winner === 0 ? '' : 's'}!</h1>
             <p>Thanks for playing nook!</p>
 
             <button 

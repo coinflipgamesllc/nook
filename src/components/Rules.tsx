@@ -55,7 +55,7 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
         instructions = (
             <Fragment>
                 <p>
-                    You can also play a perfect match at any time &mdash; even when it's not your turn. It will become your turn instantly!
+                    You can also play a perfect match at any time &mdash; even when it's not your turn.
                 </p>
                 <img src={perfect} alt="Rules on perfect matches" />
             </Fragment>

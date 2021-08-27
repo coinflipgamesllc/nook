@@ -18,12 +18,16 @@ const HandStats: FC<HandStatsProps> = ({ cards, players, turn, seat, positions }
     const handSize = cards.filter((c) => c.owner === seat && c.location === Location.Hand).length;
     const wins = cards.filter((c) => c.owner === seat && c.location === Location.Win).length;
     const isAfterFirstRound = cards.filter((c) => c.location === Location.Deck).length !== cards.length;
+    let previousPlayer = turn.player - 1;
+    if (previousPlayer === -1) {
+        previousPlayer = players.length - 1;
+    }
 
     let icon = <Fragment />;
     if (turn.player === seat && turn.phase === Phase.Think) {
         icon = <span className="icon">🤔</span>;
     } else if (turn.phase === Phase.Preround && isAfterFirstRound && seat !== 0) {
-        if (turn.player === seat) {
+        if (previousPlayer === seat) {
             icon = <span className="icon">😁</span>;
         } else {
             icon = <span className="icon">😒</span>;
