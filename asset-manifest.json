@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nook/static/css/main.a143e02f.chunk.css",
+    "main.css": "/nook/static/css/main.caa95b4b.chunk.css",
     "main.js": "/nook/static/js/main.78088c67.chunk.js",
     "main.js.map": "/nook/static/js/main.78088c67.chunk.js.map",
     "runtime-main.js": "/nook/static/js/runtime-main.ad013eb0.js",
@@ -10,7 +10,7 @@
     "static/js/2.ecb67053.chunk.js.map": "/nook/static/js/2.ecb67053.chunk.js.map",
     "index.html": "/nook/index.html",
     "static/css/2.c55f41dc.chunk.css.map": "/nook/static/css/2.c55f41dc.chunk.css.map",
-    "static/css/main.a143e02f.chunk.css.map": "/nook/static/css/main.a143e02f.chunk.css.map",
+    "static/css/main.caa95b4b.chunk.css.map": "/nook/static/css/main.caa95b4b.chunk.css.map",
     "static/js/2.ecb67053.chunk.js.LICENSE.txt": "/nook/static/js/2.ecb67053.chunk.js.LICENSE.txt",
     "static/media/Card.scss": "/nook/static/media/red_stripes_plant.4c83a92b.png",
     "static/media/rules-discards.41b08232.png": "/nook/static/media/rules-discards.41b08232.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.ad013eb0.js",
     "static/css/2.c55f41dc.chunk.css",
     "static/js/2.ecb67053.chunk.js",
-    "static/css/main.a143e02f.chunk.css",
+    "static/css/main.caa95b4b.chunk.css",
     "static/js/main.78088c67.chunk.js"
   ]
 }
