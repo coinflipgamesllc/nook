@@ -375,15 +375,13 @@ export const getRoundWinner = (state: GameState): number | undefined => {
 };
 
 export const getGameWinner = (state: GameState): number | undefined => {
-    if (state.turn.phase === Phase.Preround) {
+    if (state.turn.phase !== Phase.Postgame) {
         return undefined;
     }
 
-    // Because of the state updates, we're actually checking for a win at the moment the
-    // player's hand goes to 0 and they have 2 wins already (which will be 3 in a second if they do).
     return state.players
         .map((p) => ({ seat: p.seat, handSize: getHand(state, p.seat).length, wins: numWins(state, p.seat) }))
-        .filter((p) => p.wins === 2 && p.handSize === 0)
+        .filter((p) => p.wins === 3)
         .map((p) => p.seat)
         .shift();
 };
