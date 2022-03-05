@@ -1,61 +1,115 @@
 @use "sass:math";
 
 .card {
-    position: absolute;
-    top: -200px;
-    left: -200px;
+  position: absolute;
+  top: -200px;
+  left: -200px;
 
-    padding-left: 120px;
-    padding-top: 186px;
-    
-    border: 1px solid #333;
-    border-radius: 5%;
-    overflow: hidden;
+  padding-left: 120px;
+  padding-top: 186px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
+  border: 1px solid #333;
+  border-radius: 5%;
+  overflow: hidden;
 
-    transition: 
-        transform 0.4s cubic-bezier(0, 0.96, 0.21, 1.41),
-        top 0.6s ease-in-out,
-        left 0.6s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    box-shadow: 2px 2px 5px 3px #3333;
+  transition: transform 0.4s cubic-bezier(0, 0.96, 0.21, 1.41),
+    top 0.6s ease-in-out, left 0.6s ease-in-out;
 
-    &.cardback { background-image: url('../img/cardback.png'); }
-    &.blue_chevron_clock { background-image: url('../img/blue_chevron_clock.png'); }
-    &.blue_chevron_picture { background-image: url('../img/blue_chevron_picture.png'); }
-    &.blue_chevron_plant { background-image: url('../img/blue_chevron_plant.png'); }
-    &.blue_flower_clock { background-image: url('../img/blue_flower_clock.png'); }
-    &.blue_flower_picture { background-image: url('../img/blue_flower_picture.png'); }
-    &.blue_flower_plant { background-image: url('../img/blue_flower_plant.png'); }
-    &.blue_stripes_clock { background-image: url('../img/blue_stripes_clock.png'); }
-    &.blue_stripes_picture { background-image: url('../img/blue_stripes_picture.png'); }
-    &.blue_stripes_plant { background-image: url('../img/blue_stripes_plant.png'); }
-    &.grey_chevron_clock { background-image: url('../img/grey_chevron_clock.png'); }
-    &.grey_chevron_picture { background-image: url('../img/grey_chevron_picture.png'); }
-    &.grey_chevron_plant { background-image: url('../img/grey_chevron_plant.png'); }
-    &.grey_flower_clock { background-image: url('../img/grey_flower_clock.png'); }
-    &.grey_flower_picture { background-image: url('../img/grey_flower_picture.png'); }
-    &.grey_flower_plant { background-image: url('../img/grey_flower_plant.png'); }
-    &.grey_stripes_clock { background-image: url('../img/grey_stripes_clock.png'); }
-    &.grey_stripes_picture { background-image: url('../img/grey_stripes_picture.png'); }
-    &.grey_stripes_plant { background-image: url('../img/grey_stripes_plant.png'); }
-    &.red_chevron_clock { background-image: url('../img/red_chevron_clock.png'); }
-    &.red_chevron_picture { background-image: url('../img/red_chevron_picture.png'); }
-    &.red_chevron_plant { background-image: url('../img/red_chevron_plant.png'); }
-    &.red_flower_clock { background-image: url('../img/red_flower_clock.png'); }
-    &.red_flower_picture { background-image: url('../img/red_flower_picture.png'); }
-    &.red_flower_plant { background-image: url('../img/red_flower_plant.png'); }
-    &.red_stripes_clock { background-image: url('../img/red_stripes_clock.png'); }
-    &.red_stripes_picture { background-image: url('../img/red_stripes_picture.png'); }
-    &.red_stripes_plant { background-image: url('../img/red_stripes_plant.png'); }
+  box-shadow: 2px 2px 5px 3px #3333;
+
+  &.cardback {
+    background-image: url("../img/cardback.png");
+  }
+  &.blue_circles_clock {
+    background-image: url("../img/blue_circles_clock.png");
+  }
+  &.blue_circles_painting {
+    background-image: url("../img/blue_circles_painting.png");
+  }
+  &.blue_circles_plant {
+    background-image: url("../img/blue_circles_plant.png");
+  }
+  &.blue_flowers_clock {
+    background-image: url("../img/blue_flowers_clock.png");
+  }
+  &.blue_flowers_painting {
+    background-image: url("../img/blue_flowers_painting.png");
+  }
+  &.blue_flowers_plant {
+    background-image: url("../img/blue_flowers_plant.png");
+  }
+  &.blue_stripes_clock {
+    background-image: url("../img/blue_stripes_clock.png");
+  }
+  &.blue_stripes_painting {
+    background-image: url("../img/blue_stripes_painting.png");
+  }
+  &.blue_stripes_plant {
+    background-image: url("../img/blue_stripes_plant.png");
+  }
+  &.purple_circles_clock {
+    background-image: url("../img/purple_circles_clock.png");
+  }
+  &.purple_circles_painting {
+    background-image: url("../img/purple_circles_painting.png");
+  }
+  &.purple_circles_plant {
+    background-image: url("../img/purple_circles_plant.png");
+  }
+  &.purple_flowers_clock {
+    background-image: url("../img/purple_flowers_clock.png");
+  }
+  &.purple_flowers_painting {
+    background-image: url("../img/purple_flowers_painting.png");
+  }
+  &.purple_flowers_plant {
+    background-image: url("../img/purple_flowers_plant.png");
+  }
+  &.purple_stripes_clock {
+    background-image: url("../img/purple_stripes_clock.png");
+  }
+  &.purple_stripes_painting {
+    background-image: url("../img/purple_stripes_painting.png");
+  }
+  &.purple_stripes_plant {
+    background-image: url("../img/purple_stripes_plant.png");
+  }
+  &.red_circles_clock {
+    background-image: url("../img/red_circles_clock.png");
+  }
+  &.red_circles_painting {
+    background-image: url("../img/red_circles_painting.png");
+  }
+  &.red_circles_plant {
+    background-image: url("../img/red_circles_plant.png");
+  }
+  &.red_flowers_clock {
+    background-image: url("../img/red_flowers_clock.png");
+  }
+  &.red_flowers_painting {
+    background-image: url("../img/red_flowers_painting.png");
+  }
+  &.red_flowers_plant {
+    background-image: url("../img/red_flowers_plant.png");
+  }
+  &.red_stripes_clock {
+    background-image: url("../img/red_stripes_clock.png");
+  }
+  &.red_stripes_painting {
+    background-image: url("../img/red_stripes_painting.png");
+  }
+  &.red_stripes_plant {
+    background-image: url("../img/red_stripes_plant.png");
+  }
 }
 
 /**
  * Spread out the cards in the player's hand
  */
-$player-hand: '.card.front.hand';
+$player-hand: ".card.front.hand";
 $ph: $player-hand;
 
 @for $i from 1 through 12 {
@@ -63,80 +117,84 @@ $ph: $player-hand;
     $xOffset: ($i * 80) - 500;
     $yOffset: math.pow(-($i - 6), 2);
     $rotation: $i - 6;
-    transform: translateX(#{$xOffset}px) rotate(#{$rotation}deg) translateY(#{$yOffset}px);
+    transform: translateX(#{$xOffset}px)
+      rotate(#{$rotation}deg)
+      translateY(#{$yOffset}px);
 
     &:hover {
-        transform: translateX(#{$xOffset}px) rotate(#{$rotation}deg) translateY(#{$yOffset - 20}px);
-        box-shadow: 0 0 10px 5px #fff;
-        cursor: pointer;
+      transform: translateX(#{$xOffset}px)
+        rotate(#{$rotation}deg)
+        translateY(#{$yOffset - 20}px);
+      box-shadow: 0 0 10px 5px #fff;
+      cursor: pointer;
     }
   }
 
-  $ph: $ph + ' ~ ' + $player-hand;
+  $ph: $ph + " ~ " + $player-hand;
 }
 
 /**
  * Spread out the cards a bit less in the bot's hands
  */
 @for $p from 1 through 4 {
-    $bot-hand: '.card.back.hand.p#{$p}';
-    $bh: $bot-hand;
+  $bot-hand: ".card.back.hand.p#{$p}";
+  $bh: $bot-hand;
 
-    @for $i from 1 through 12 {
-        #{$bh} {
-            $xOffset: ($i * -6);
-            $rotation: (-$i + 6) / 2;
-            transform: translateX(#{$xOffset}px) rotate(#{$rotation}deg);
-        }
-
-        $bh: $bh + ' ~ ' + $bot-hand;
+  @for $i from 1 through 12 {
+    #{$bh} {
+      $xOffset: ($i * -6);
+      $rotation: (-$i + 6) / 2;
+      transform: translateX(#{$xOffset}px) rotate(#{$rotation}deg);
     }
+
+    $bh: $bh + " ~ " + $bot-hand;
+  }
 }
 
 /**
  * Make the deck look like a deck
  */
-$deck: '.card.deck';
+$deck: ".card.deck";
 $d: $deck;
 
 @for $i from 1 through 12 {
-    #{$d} {
-        $xOffset: -($i / 1.1);
-        $yOffset: -($i / 1.5);
-        transform: translate(#{$xOffset}px, #{$yOffset}px);
-    }
+  #{$d} {
+    $xOffset: -($i / 1.1);
+    $yOffset: -($i / 1.5);
+    transform: translate(#{$xOffset}px, #{$yOffset}px);
+  }
 
-    $d: $d + ' ~ ' + $deck;
+  $d: $d + " ~ " + $deck;
 }
 
 /**
  * Make the discard look like a deck, but messier
  */
- $deck: '.card.discard';
- $d: $deck;
- 
- @for $i from 1 through 12 {
-     #{$d} {
-         $xOffset: -($i / 1.1);
-         $yOffset: -($i / 1.5);
-         $rotation: math.random(20) - 10;
-         transform: translate(#{$xOffset}px, #{$yOffset}px) rotate(#{$rotation}deg);
-     }
- 
-     $d: $d + ' ~ ' + $deck;
- }
+$deck: ".card.discard";
+$d: $deck;
+
+@for $i from 1 through 12 {
+  #{$d} {
+    $xOffset: -($i / 1.1);
+    $yOffset: -($i / 1.5);
+    $rotation: math.random(20) - 10;
+    transform: translate(#{$xOffset}px, #{$yOffset}px) rotate(#{$rotation}deg);
+  }
+
+  $d: $d + " ~ " + $deck;
+}
 
 /**
  * Scale the center card for drawing the eye.
  */
- $center: '.card.center';
- $d: $center;
- 
- @for $i from 1 through 12 {
-    #{$d} {
-        $rotation: math.random(20) - 10;
-        transform: rotate(#{$rotation}deg) scale(1.3);
-    }
+$center: ".card.center";
+$d: $center;
 
-    $d: $d + ' ~ ' + $center;
+@for $i from 1 through 12 {
+  #{$d} {
+    $rotation: math.random(20) - 10;
+    transform: rotate(#{$rotation}deg) scale(1.3);
+  }
+
+  $d: $d + " ~ " + $center;
 }
