@@ -409,10 +409,6 @@ export const getRoundWinner = (state: GameState): number | undefined => {
 };
 
 export const getGameWinner = (state: GameState): number | undefined => {
-  if (state.turn.phase !== Phase.Postgame) {
-    return undefined;
-  }
-
   return state.players
     .map((p) => ({
       seat: p.seat,

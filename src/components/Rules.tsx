@@ -26,6 +26,16 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
             this nook should look.
           </p>
           <img src={title} alt="Nook title" />
+          <p>
+            Illustrations by{" "}
+            <a
+              href="https://twitter.com/Remuvou2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Remugade
+            </a>
+          </p>
         </Fragment>
       );
       break;
@@ -96,19 +106,34 @@ const Rules: FC<RulesProps> = ({ dispatch, resume }) => {
         </div>
       </div>
 
-      <button
-        className={page === 4 ? "highlight" : ""}
-        onClick={() => {
-          resume
-            ? dispatch({ type: Actions.ResumeGame, payload: null })
-            : dispatch({
-                type: Actions.StartGame,
-                payload: { numHumans: 1, numBots: 3 },
-              });
-        }}
-      >
-        {resume ? "Resume" : "Start"} Game
-      </button>
+      <div className="buttons">
+        <button
+          className={page === 4 ? "highlight" : ""}
+          onClick={() => {
+            dispatch({
+              type: Actions.StartGame,
+              payload: { numHumans: 1, numBots: 3 },
+            });
+            dispatch({ type: Actions.ResumeGame, payload: null });
+          }}
+        >
+          New Game
+        </button>
+
+        <button
+          className={page === 4 ? "highlight" : ""}
+          onClick={() => {
+            resume
+              ? dispatch({ type: Actions.ResumeGame, payload: null })
+              : dispatch({
+                  type: Actions.StartGame,
+                  payload: { numHumans: 1, numBots: 3 },
+                });
+          }}
+        >
+          {resume ? "Resume" : "Start"} Game
+        </button>
+      </div>
     </div>
   );
 };
