@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/nook/static/css/main.04d41353.chunk.css",
-    "main.js": "/nook/static/js/main.1eb9df26.chunk.js",
-    "main.js.map": "/nook/static/js/main.1eb9df26.chunk.js.map",
+    "main.css": "/nook/static/css/main.5f279868.chunk.css",
+    "main.js": "/nook/static/js/main.0df71d6e.chunk.js",
+    "main.js.map": "/nook/static/js/main.0df71d6e.chunk.js.map",
     "runtime-main.js": "/nook/static/js/runtime-main.ad013eb0.js",
     "runtime-main.js.map": "/nook/static/js/runtime-main.ad013eb0.js.map",
     "static/css/2.c55f41dc.chunk.css": "/nook/static/css/2.c55f41dc.chunk.css",
-    "static/js/2.ecb67053.chunk.js": "/nook/static/js/2.ecb67053.chunk.js",
-    "static/js/2.ecb67053.chunk.js.map": "/nook/static/js/2.ecb67053.chunk.js.map",
+    "static/js/2.e50479bd.chunk.js": "/nook/static/js/2.e50479bd.chunk.js",
+    "static/js/2.e50479bd.chunk.js.map": "/nook/static/js/2.e50479bd.chunk.js.map",
     "index.html": "/nook/index.html",
     "static/css/2.c55f41dc.chunk.css.map": "/nook/static/css/2.c55f41dc.chunk.css.map",
-    "static/css/main.04d41353.chunk.css.map": "/nook/static/css/main.04d41353.chunk.css.map",
-    "static/js/2.ecb67053.chunk.js.LICENSE.txt": "/nook/static/js/2.ecb67053.chunk.js.LICENSE.txt",
+    "static/css/main.5f279868.chunk.css.map": "/nook/static/css/main.5f279868.chunk.css.map",
+    "static/js/2.e50479bd.chunk.js.LICENSE.txt": "/nook/static/js/2.e50479bd.chunk.js.LICENSE.txt",
     "static/media/Card.scss": "/nook/static/media/red_stripes_plant.591c944f.png",
-    "static/media/rules-discards.4ab6efe7.png": "/nook/static/media/rules-discards.4ab6efe7.png",
+    "static/media/rules-discards.fa4adcf7.png": "/nook/static/media/rules-discards.fa4adcf7.png",
     "static/media/rules-matching.2efc1db4.png": "/nook/static/media/rules-matching.2efc1db4.png",
-    "static/media/rules-perfect-match.4ee89b96.png": "/nook/static/media/rules-perfect-match.4ee89b96.png",
+    "static/media/rules-perfect-match.ce102ae8.png": "/nook/static/media/rules-perfect-match.ce102ae8.png",
     "static/media/App.scss": "/nook/static/media/table.3487de47.png",
     "static/media/title.ba82babd.png": "/nook/static/media/title.ba82babd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ad013eb0.js",
     "static/css/2.c55f41dc.chunk.css",
-    "static/js/2.ecb67053.chunk.js",
-    "static/css/main.04d41353.chunk.css",
-    "static/js/main.1eb9df26.chunk.js"
+    "static/js/2.e50479bd.chunk.js",
+    "static/css/main.5f279868.chunk.css",
+    "static/js/main.0df71d6e.chunk.js"
   ]
 }
