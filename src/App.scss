@@ -10,7 +10,7 @@ body {
 button {
   padding: 16px 32px;
 
-  background-color: #ddda;
+  background-color: #ddd;
   border: 1px solid #333;
   border-radius: 5px;
 
@@ -22,10 +22,11 @@ button {
   cursor: pointer;
 
   &:hover:not(:disabled) {
-    background-color: #fffa;
+    background-color: #fff;
   }
   &:active {
     box-shadow: 1px 1px 1px 1px #3339;
+    transform: translateY(1px);
   }
   &:disabled {
     background-color: #ccca;

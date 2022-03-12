@@ -1,25 +1,33 @@
 .turn-tracker {
-    position: absolute;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 
-    margin: auto;
+  margin: auto;
 
-    width: 500px;
-    height: 60px;
+  width: 500px;
+  height: 60px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    &.play, &.discard, &.think {
-        border: 1px solid #333;
-        border-radius: 5px;
-        background-color: #ddda;
-    }
+  &.play,
+  &.discard,
+  &.think {
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #ddda;
+  }
 
-    font-size: 2em;
+  font-size: 2em;
 
-    span {
-        padding: 10px;
-    }
+  span {
+    padding: 10px;
+  }
+
+  button {
+    z-index: 999;
+  }
 }

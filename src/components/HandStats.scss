@@ -1,37 +1,38 @@
 .hand-stats {
-    position: absolute;
+  position: absolute;
 
-    width: 240px;
-    height: 50px;
+  width: 240px;
+  height: 50px;
+  z-index: 999;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 0.9em;
-    text-align: center;
+  font-size: 0.9em;
+  text-align: center;
 
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #ddda;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #ddda;
 
-    span {
-        padding: 10px;
+  span {
+    padding: 10px;
 
-        &.bold {
-            font-weight: 600;
-        }
-
-        &.icon {
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-
-            width: 100px;
-            transform: translateX(-60px);
-
-            font-size: 3em;
-        }
+    &.bold {
+      font-weight: 600;
     }
+
+    &.icon {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+
+      width: 100px;
+      transform: translateX(-60px);
+
+      font-size: 3em;
+    }
+  }
 }
